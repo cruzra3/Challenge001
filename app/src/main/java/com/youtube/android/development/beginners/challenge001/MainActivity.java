@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onRegisterBtnClick(View view) {
         findTheViews();
-        firstNameOut.setText(firstName.getText().toString());
-        lastNameOut.setText(lastName.getText().toString());
-        emailOut.setText(email.getText().toString());
+        firstNameOut.setText("First Name: " + firstName.getText().toString());
+        lastNameOut.setText("Last Name: " + lastName.getText().toString());
+        emailOut.setText("Email: " + email.getText().toString());
     }
 
     private void findTheViews() {

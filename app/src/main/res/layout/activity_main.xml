@@ -49,13 +49,29 @@
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <TextView
+        android:id="@+id/email_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/first_name_out"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/last_name_out"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_out" />
+
+    <TextView
         android:id="@+id/first_name_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginBottom="41dp"
+        android:ems="15"
         android:inputType="textPersonName"
         android:text="First Name"
+        app:layout_constraintBottom_toTopOf="@+id/last_name_out"
         app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="@+id/btnRegister"
         app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
@@ -63,25 +79,13 @@
         android:id="@+id/last_name_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
+        android:layout_marginBottom="42dp"
+        android:ems="15"
         android:inputType="textPersonName"
         android:text="Last Name"
+        app:layout_constraintBottom_toTopOf="@+id/email_out"
         app:layout_constraintEnd_toEndOf="@+id/first_name_out"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/first_name_out"
-        app:layout_constraintTop_toBottomOf="@+id/first_name_out" />
-
-    <TextView
-        android:id="@+id/email_out"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email"
-        app:layout_constraintEnd_toEndOf="@+id/first_name_out"
-        app:layout_constraintStart_toStartOf="@+id/last_name_out"
-        app:layout_constraintTop_toBottomOf="@+id/last_name_out" />
-
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/first_name_out" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
