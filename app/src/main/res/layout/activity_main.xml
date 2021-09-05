@@ -24,8 +24,8 @@
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:hint="Last Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/first_name"
+        app:layout_constraintStart_toStartOf="@+id/first_name"
         app:layout_constraintTop_toBottomOf="@+id/first_name" />
 
     <EditText
@@ -33,22 +33,20 @@
         android:layout_width="227dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginTop="12dp"
         android:hint="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/last_name"
+        app:layout_constraintStart_toStartOf="@+id/last_name"
         app:layout_constraintTop_toBottomOf="@+id/last_name" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
         android:onClick="onRegisterBtnClick"
-        />
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <TextView
         android:id="@+id/first_name_out"
@@ -57,8 +55,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="First Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
         app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
     <TextView
@@ -69,9 +67,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Last Name"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/first_name_out"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/first_name_out"
         app:layout_constraintTop_toBottomOf="@+id/first_name_out" />
 
     <TextView
@@ -81,8 +79,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/first_name_out"
+        app:layout_constraintStart_toStartOf="@+id/last_name_out"
         app:layout_constraintTop_toBottomOf="@+id/last_name_out" />
 
 
